@@ -11,7 +11,7 @@ function Rocket(props) {
       <Card.Body className="rocket-desc">
         <Card.Title className="rocket-title">{name}</Card.Title>
         <Card.Text>{desc}</Card.Text>
-        <Button variant="primary">Reserve Rocket</Button>
+        <Button className="reserve-rocket-btn" variant="primary">Reserve Rocket</Button>
       </Card.Body>
     </Card>
   );
