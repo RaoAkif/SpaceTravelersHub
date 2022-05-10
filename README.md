@@ -45,6 +45,7 @@ npm run build
 ```
 
 ### Deployment
+
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RaoAkif/Bookstore)
 
 ## Authors
@@ -58,8 +59,8 @@ npm run build
 👤 **Author2**
 
 - GitHub: [@Aduda-Boaz](https://github.com/Aduda-Boaz)
-- Twitter: [@Aduda-Boaz](https://twitter.com/Aduda-Boaz)
-- LinkedIn: [Aduda-Boaz](https://linkedin.com/in/Aduda-Boaz)
+- Twitter: [@BoazAduda](https://twitter.com/BoazAduda)
+- LinkedIn: [Boaz Aduda](https://www.linkedin.com/in/boaz-aduda/)
 
 ## 🤝 Contributing
 
