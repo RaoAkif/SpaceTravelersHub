@@ -2,15 +2,17 @@ import { configureStore, combineReducers, applyMiddleware } from '@reduxjs/toolk
 import { logger } from 'redux-logger';
 import thunk from 'redux-thunk';
 import rocketsReducer from './rockets/rockets';
-import missionsReducer from './missions/missions';
+import missions, { missionsAPI } from './missions/missions';
 
 const rootReducer = combineReducers({
   rockets: rocketsReducer,
-  missions: missionsReducer,
+  missions,
 });
 
 const thunkMiddleware = applyMiddleware(thunk, logger);
 
 const store = configureStore({ reducer: rootReducer, thunkMiddleware });
+
+store.dispatch(missionsAPI());
 
 export default store;
