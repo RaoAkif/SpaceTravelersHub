@@ -1,3 +1,4 @@
+/* eslint-disable default-param-last */
 const MISSIONS_ACTIONS = 'missionStore/missions/MISSION_ACTIONS';
 
 const mURL = 'https://api.spacexdata.com/v3/missions';
@@ -23,10 +24,10 @@ export const missionsAPI = () => async (dispatch) => {
   dispatch(missionAction(makeMissions));
 };
 
-const missions = (action, state = initialState) => {
+const missions = (state = initialState, action) => {
   switch (action.type) {
     case MISSIONS_ACTIONS:
-      return [...action.payload];
+      return action.payload;
 
     default:
       return state;
