@@ -1,56 +1,65 @@
-# Project Name
+# Space Traveler's Hub
 
 > This repository contains Webpack Template.
 
 
 ## Get Started
-Click on the green button **Use the Template** and Start working. Happy Coding !!!
-![image](https://user-images.githubusercontent.com/61361037/161849727-b74bc9e4-768d-4aab-9cb5-3bd6956d4b0c.png)
-
-
-- [Live Site](http://GITHUB_ID.github.io/...)
-- [Live Demo Link](https://www.loom.com/share/...)
+ * [Netlify Live](https://bookstore-raoakif.netlify.app/)
+ * [Heroku Live](https://bookstore-raoakif.herokuapp.com/)
 
 
 # Getting Started with Create React App
+### Prerequisites
+`Node JS`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Setup
+```
+git clone git@github.com:RaoAkif/Bookstore.git
+```
+### Install
+```
+cd Bookstore
+```
+```
+npm i
+```
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
+### Run App Locally
+```
+npm start
+```
+OR
+```
+yarn start
+```
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Run Tests
+```
+npm test
+```
 
-### `npm test`
+### Create Build
+```
+npm run build
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
+### Deployment
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RaoAkif/Bookstore)
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/GITHUB_ID)
-- Twitter: [@twitterhandle](https://twitter.com/GITHUB_ID)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/GITHUB_ID)
+- GitHub: [@RaoAkif](https://github.com/RaoAkif)
+- Twitter: [@RaoAkif](https://twitter.com/RaoAkif)
+- LinkedIn: [RaoAkif](https://linkedin.com/in/RaoAkif)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
+- GitHub: [@Aduda-Boaz](https://github.com/Aduda-Boaz)
+- Twitter: [@Aduda-Boaz](https://twitter.com/Aduda-Boaz)
+- LinkedIn: [Aduda-Boaz](https://linkedin.com/in/Aduda-Boaz)
 
 ## 🤝 Contributing
 
@@ -71,5 +80,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-
-
