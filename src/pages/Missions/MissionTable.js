@@ -22,7 +22,7 @@ function Table() {
                 key={msn.mission_id}
                 id={msn.mission_id}
                 name={msn.mission_name}
-                description={mission.description}
+                description={msn.description}
               />
             ))
           }

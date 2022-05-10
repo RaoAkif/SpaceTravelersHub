@@ -15,8 +15,8 @@ export const missionsAPI = () => async (dispatch) => {
   const missions = await response.json();
   const makeMissions = missions.map((e) => {
     const obj = {
-      id: e.id,
-      name: e.name,
+      mission_id: e.mission_id,
+      mission_name: e.mission_name,
       description: e.description,
     };
     return obj;
