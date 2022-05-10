@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from '../assets/images/logo.png';
+import logo from '../../assets/images/logo.png';
 
 const navBar = {
   display: 'flex',

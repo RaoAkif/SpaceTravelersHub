@@ -1,13 +1,16 @@
 import { configureStore, combineReducers, applyMiddleware } from '@reduxjs/toolkit';
+import { logger } from 'redux-logger';
 import thunk from 'redux-thunk';
-import missions, { missionsAPI } from './missions/missions';
+
+import rocketsReducer from './rockets/rockets';
+import missions from './missions/missions';
 
 const rootReducer = combineReducers({
-  // books: bookReducer,
+  rockets: rocketsReducer,
   missions,
 });
 
-const thunkMiddleware = applyMiddleware(thunk);
+const thunkMiddleware = applyMiddleware(thunk, logger);
 
 const store = configureStore({ reducer: rootReducer, thunkMiddleware });
 
