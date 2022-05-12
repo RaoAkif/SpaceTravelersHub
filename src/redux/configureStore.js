@@ -1,13 +1,13 @@
-import { configureStore, combineReducers, applyMiddleware } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
+import { logger } from 'redux-logger';
+import missionsReducer from './missions/missions';
+import rocketsReducer from './rockets/rockets';
 
-const rootReducer = combineReducers({
-  // books: bookReducer,
-  // categories: categoryReducer,
+export default configureStore({
+  reducer: {
+    missions: missionsReducer,
+    rockets: rocketsReducer,
+  },
+  middleware: [thunk, logger],
 });
-
-const thunkMiddleware = applyMiddleware(thunk);
-
-const store = configureStore({ reducer: rootReducer, thunkMiddleware });
-
-export default store;
