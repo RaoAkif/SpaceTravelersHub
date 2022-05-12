@@ -2,7 +2,7 @@ import fetchRockets from './rocketsApi';
 
 const GET_ROCKETS = 'spaceTravelHub/rockets/GET_ROCKETS';
 const RESERVE_ROCKET = 'spaceTravelHub/rockets/RESERVE_ROCKET';
-const UNRESERVE_ROCKET = 'spaceTravelHub/rockets/REMOVE_ROCKET';
+const UNRESERVE_ROCKET = 'spaceTravelHub/rockets/UNRESERVE_ROCKET';
 
 const initialState = [];
 
