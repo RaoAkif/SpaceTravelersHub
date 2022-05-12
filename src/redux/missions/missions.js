@@ -40,7 +40,10 @@ export const missionsAPI = () => async (dispatch) => {
 const missions = (state = initialState, action = {}) => {
   switch (action.type) {
     case MISSIONS_ACTIONS:
-      return action.payload;
+      return action.payload.map((missions) => ({
+        ...missions,
+        reserved: false,
+      }));
 
     case JOIN_MISSION:
       return state.map((mission) => {
