@@ -8,7 +8,7 @@ function Rockets() {
   const rockets = useSelector((state) => state.rockets);
 
   useEffect(() => {
-    dispatch(getRockets());
+    if (!rockets.length) dispatch(getRockets());
   }, []);
 
   return (
@@ -17,9 +17,10 @@ function Rockets() {
         <Rocket
           key={rocket.id}
           id={rocket.id}
-          image={rocket.flickr_images}
+          image={rocket.flickr_images[0]}
           name={rocket.rocket_name}
-          desc={rocket.description}
+          description={rocket.description}
+          reserve={rocket.reserve}
         />
       ))}
     </div>
