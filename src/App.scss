@@ -39,3 +39,24 @@
   height: 4rem;
   margin-right: 1rem;
 }
+
+.Horizontal-Card {
+  flex-direction: row !important;
+  margin: 1rem;
+}
+
+.Rocket-Img {
+  height: 18rem;
+  width: 24rem;
+}
+
+@media (max-width: 768px) {
+  .Horizontal-Card {
+    flex-direction: column !important;
+    margin: 1rem;
+  }
+
+  .Rocket-Img {
+    width: 100%;
+  }
+}
