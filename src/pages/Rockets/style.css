@@ -10,7 +10,7 @@
   margin: 20px;
 }
 
-.rocket-reservation-badge > span.reserved {
+.rocket-reservation-status {
   background-color: #f68d36;
   color:white;
   padding: 2px 6px;
@@ -42,3 +42,4 @@
   border-radius: 4px;
   padding: 10px;
 }
+
