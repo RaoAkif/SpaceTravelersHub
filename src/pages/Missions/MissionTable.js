@@ -23,6 +23,7 @@ function Table() {
                 id={msn.mission_id}
                 name={msn.mission_name}
                 description={msn.description}
+                reserved={msn.reserved}
               />
             ))
           }
