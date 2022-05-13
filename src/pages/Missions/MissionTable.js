@@ -6,7 +6,7 @@ function Table() {
 
   return (
     <div className="container table-responsive">
-      <table className="table-bordered table-striped table">
+      <table className="table-bordered table-striped table p-4 bg-light border">
         <thead>
           <tr className="fs-5">
             <th>Mission</th>
