@@ -4,19 +4,11 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import logo from '../../assets/images/logo.png';
 import './style.css';
 
-const navBar = {
-  height: '80px',
-  gap: '600px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-};
-
 function Header() {
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
-        <Container style={navBar}>
+      <Navbar bg="dark" variant="dark" expand="md" className="Nav-bar">
+        <Container>
           <Navbar.Brand href="#home">
             <img
               alt=""
@@ -28,7 +20,7 @@ function Header() {
             {' '}
             Space Traverlers Hub
           </Navbar.Brand>
-          <Nav className="me-auto d-flex">
+          <Nav className="me-auto">
             <NavLink className="nav-link" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/">Rockets</NavLink>
             <NavLink className="nav-link" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/missions">Missions</NavLink>
             <NavLink className="nav-link" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/myprofile">My Profile</NavLink>
