@@ -4,8 +4,7 @@
 
 
 ## Get Started
- * [Netlify Live](https://bookstore-raoakif.netlify.app/)
- * [Heroku Live](https://bookstore-raoakif.herokuapp.com/)
+ * [Netlify Live](https://spacetravellerhub.netlify.app)
 
 
 # Getting Started with Create React App
