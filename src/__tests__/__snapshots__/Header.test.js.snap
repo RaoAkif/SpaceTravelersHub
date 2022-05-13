@@ -28,7 +28,11 @@ exports[`renders correctly 1`] = `
           width="30"
         />
          
-        Space Traverlers Hub
+        <span
+          className="logo-text"
+        >
+          Space Traverlers Hub
+        </span>
       </a>
       <div
         className="me-auto navbar-nav"
