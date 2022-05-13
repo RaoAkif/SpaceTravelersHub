@@ -4,11 +4,18 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import logo from '../../assets/images/logo.png';
 import './style.css';
 
+const navBar = {
+  height: '80px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+};
+
 function Header() {
   return (
     <div>
-      <Navbar bg="dark" variant="dark" expand="md" className="Nav-bar">
-        <Container>
+      <Navbar bg="dark" variant="dark" className="Nav-bar">
+        <Container style={navBar}>
           <Navbar.Brand href="#home">
             <img
               alt=""
