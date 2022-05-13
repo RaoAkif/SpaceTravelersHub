@@ -6,7 +6,6 @@ import './style.css';
 
 const navBar = {
   height: '80px',
-  background: 'white',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
@@ -15,7 +14,7 @@ const navBar = {
 function Header() {
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" className="Nav-bar">
         <Container style={navBar}>
           <Navbar.Brand href="#home">
             <img
@@ -29,9 +28,9 @@ function Header() {
             Space Traverlers Hub
           </Navbar.Brand>
           <Nav className="me-auto">
-            <NavLink className="navLink" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/">Rockets</NavLink>
-            <NavLink className="navLink" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/missions">Missions</NavLink>
-            <NavLink className="navLink" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/myprofile">My Profile</NavLink>
+            <NavLink className="nav-link" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/">Rockets</NavLink>
+            <NavLink className="nav-link" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/missions">Missions</NavLink>
+            <NavLink className="nav-link" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/myprofile">My Profile</NavLink>
           </Nav>
         </Container>
       </Navbar>
