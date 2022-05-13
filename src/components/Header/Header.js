@@ -25,7 +25,7 @@ function Header() {
               className="logo d-inline-block align-top"
             />
             {' '}
-            Space Traverlers Hub
+            <span className="logo-text">Space Traverlers Hub</span>
           </Navbar.Brand>
           <Nav className="me-auto">
             <NavLink className="nav-link" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/">Rockets</NavLink>

@@ -6,6 +6,7 @@ exports[`renders correctly 1`] = `
 >
   <table
     className="table-bordered table-striped table"
+    id="table"
   >
     <thead>
       <tr
