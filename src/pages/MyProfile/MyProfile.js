@@ -4,10 +4,10 @@ import './style.css';
 
 function MyProfile() {
   const rockets = useSelector((state) => state.rockets);
-  const missions = useSelector((state) => state.missions);
+  const msn = useSelector((state) => state.missions);
 
   const reservedRockets = rockets.filter((rocket) => rocket.reserve);
-  const activeMissions = missions.filter((mission) => mission.reserved);
+  const activeMissions = msn.filter((mission) => mission.reserved);
 
   return (
     <div className="joined">

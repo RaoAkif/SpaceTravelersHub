@@ -1,6 +1,5 @@
 import React from 'react';
 import MissionTable from './MissionTable';
-import './Mission.scss';
 
 function Missions() {
   return (
