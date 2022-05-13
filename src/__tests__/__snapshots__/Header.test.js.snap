@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <nav
+    className="Nav-bar navbar navbar-expand navbar-dark bg-dark"
+  >
+    <div
+      className="container"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": "80px",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <a
+        className="navbar-brand"
+        href="#home"
+      >
+        <img
+          alt=""
+          className="logo d-inline-block align-top"
+          height="30"
+          src="logo.png"
+          width="30"
+        />
+         
+        <span
+          className="logo-text"
+        >
+          Space Traverlers Hub
+        </span>
+      </a>
+      <div
+        className="me-auto navbar-nav"
+        onKeyDown={[Function]}
+      >
+        <a
+          aria-current="page"
+          className="nav-link active"
+          href="/"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#00d7c6",
+              "color": "#fff",
+            }
+          }
+        >
+          Rockets
+        </a>
+        <a
+          className="nav-link"
+          href="/missions"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#f0f0f0",
+              "color": "#545e6f",
+            }
+          }
+        >
+          Missions
+        </a>
+        <a
+          className="nav-link"
+          href="/myprofile"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#f0f0f0",
+              "color": "#545e6f",
+            }
+          }
+        >
+          My Profile
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
