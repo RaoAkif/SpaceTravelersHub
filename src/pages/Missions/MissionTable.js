@@ -1,12 +1,13 @@
 import { useSelector } from 'react-redux';
 import MissionList from './MissionList';
+import './style.css';
 
 function Table() {
   const mission = useSelector((state) => state.missions);
 
   return (
     <div className="container table-responsive">
-      <table className="table-bordered table-striped table">
+      <table id="table" className="table-bordered table-striped table">
         <thead>
           <tr className="fs-5">
             <th>Mission</th>
