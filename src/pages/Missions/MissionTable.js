@@ -8,6 +8,7 @@ function Table() {
   return (
     <div className="container table-responsive">
       <table id="table" className="table-bordered table-striped table">
+
         <thead>
           <tr className="fs-5">
             <th>Mission</th>
