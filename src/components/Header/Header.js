@@ -1,35 +1,40 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
 import logo from '../../assets/images/logo.png';
+import './style.css';
+
+const navBar = {
+  height: '80px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+};
 
 function Header() {
   return (
-    <Navbar activekey={window.location.pathname} expand="md" sticky="top" variant="light" bg="light" className="border-bottom Nav-bar">
-      <Container>
-        <LinkContainer to="/" className="Logo-Container Nav-Link" rel="noopener noreferrer">
-          <Navbar.Brand>
-            <img src={logo} alt="Planet logo" className="Logo" />
-            Space Travelers&apos; Hub
+    <div>
+      <Navbar bg="dark" variant="dark" className="Nav-bar">
+        <Container style={navBar}>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src={logo}
+              width="30"
+              height="30"
+              className="logo d-inline-block align-top"
+            />
+            {' '}
+            Space Traverlers Hub
           </Navbar.Brand>
-        </LinkContainer>
-        <div className="ms-auto d-flex">
-          <LinkContainer to="/" rel="noopener noreferrer" className="Nav-Link">
-            <Nav.Link>Rockets</Nav.Link>
-          </LinkContainer>
-
-          <LinkContainer to="/Missions" className="Nav-Link" rel="noopener noreferrer">
-            <Nav.Link>Missions</Nav.Link>
-          </LinkContainer>
-
-          <LinkContainer to="/Profile" className="Nav-Link" rel="noopener noreferrer">
-            <Nav.Link>Profile</Nav.Link>
-          </LinkContainer>
-        </div>
-      </Container>
-
-    </Navbar>
-
+          <Nav className="me-auto">
+            <NavLink className="nav-link" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/">Rockets</NavLink>
+            <NavLink className="nav-link" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/missions">Missions</NavLink>
+            <NavLink className="nav-link" style={({ isActive }) => ({ color: isActive ? '#fff' : '#545e6f', background: isActive ? '#00d7c6' : '#f0f0f0' })} to="/myprofile">My Profile</NavLink>
+          </Nav>
+        </Container>
+      </Navbar>
+    </div>
   );
 }
 

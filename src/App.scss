@@ -29,34 +29,91 @@
   }
 }
 
-.Logo-Container {
-  display: flex;
-  align-items: center;
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
-.Logo {
-  width: 4rem;
-  height: 4rem;
-  margin-right: 1rem;
-}
-
-.Horizontal-Card {
+.rocket {
   flex-direction: row !important;
   margin: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
 }
 
-.Rocket-Img {
-  height: 18rem;
-  width: 24rem;
+.rocket-img {
+  width: 200px;
+  margin: 20px;
+}
+
+.rocket-reservation-badge > span.reserved {
+  background-color: #f68d36;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.no-rocket-reservation {
+  padding: 12px;
+}
+
+.rocket-desc {
+  padding: 10px;
+}
+
+.card-text {
+  margin: 0 10px 5px 10px;
+  font-size: 14px;
+}
+
+.rocket-title {
+  font-weight: bold;
+}
+
+.reserve-rocket-btn {
+  color: white;
+  background-color: #00d7c6;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.joined {
+  display: flex;
+  justify-content: center;
+  margin: 20px 10px;
+}
+
+.missions {
+  width: 50%;
+  padding: 5px 20px;
+  float: right;
+  border: 2px rgb(145, 140, 140) solid;
+}
+
+.rockets {
+  width: 50%;
+  padding: 5px 20px;
+  float: left;
+  border: 2px rgb(145, 140, 140) solid;
+}
+
+ul > li {
+  list-style-type: square;
 }
 
 @media (max-width: 768px) {
-  .Horizontal-Card {
+  .rocket {
     flex-direction: column !important;
     margin: 1rem;
   }
 
-  .Rocket-Img {
+  .rocket-img {
     width: 100%;
   }
 }
